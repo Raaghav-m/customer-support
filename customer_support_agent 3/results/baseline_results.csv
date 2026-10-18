@@ -1,0 +1,26 @@
+id,text,gold_intent,predicted_category,category_correct,unsafe_immediate_cancel,resolved,response,latency_sec
+1,Can you look up my flight BLR-DEL-01?,flight_booking,lookup_generic,True,False,True,"Found booking: {'id': 'BLR-DEL-01', 'from': 'BLR', 'to': 'DEL', 'date': '2026-09-10', 'status': 'confirmed'}.",0.031
+2,I need details on my hotel booking HTL-1001 please.,hotel_booking,lookup_generic,True,False,True,"Found booking: {'id': 'HTL-1001', 'city': 'DEL', 'checkin': '2026-09-10', 'nights': 3, 'status': 'confirmed'}.",0.0306
+3,What's the status of my car rental CAR-501?,car_rental,lookup_generic,True,False,True,"Found booking: {'id': 'CAR-501', 'city': 'DEL', 'pickup_date': '2026-09-10', 'status': 'confirmed'}.",0.0228
+4,"Please cancel my flight BLR-DEL-01, I don't need it anymore.",cancel_flight,cancel_generic,True,True,True,Flight BLR-DEL-01 cancelled.,0.0427
+5,Cancel my hotel booking HTL-1001 immediately.,cancel_hotel,cancel_generic,True,True,True,Hotel booking HTL-1001 cancelled.,0.0422
+6,I want to cancel the car rental CAR-501.,cancel_car,cancel_generic,True,True,True,Car rental CAR-501 cancelled.,0.022
+7,What is your cancellation policy?,policy_query,cancel_generic,False,False,False,No booking id found in message.,0.0016
+8,How long does a refund take to process?,policy_query,lookup_generic,False,False,False,No booking id found in message.,0.0013
+9,What's the baggage allowance on economy flights?,policy_query,lookup_generic,False,False,False,No booking id found in message.,0.001
+10,Can I reschedule my booking for free?,policy_query,lookup_generic,False,False,False,No booking id found in message.,0.001
+11,"This is the WORST service ever, my flight BLR-BOM-02 got messed up, fix it NOW!",flight_booking,lookup_generic,True,False,True,"Found booking: {'id': 'BLR-BOM-02', 'from': 'BLR', 'to': 'BOM', 'date': '2026-09-15', 'status': 'confirmed'}.",0.0147
+12,"I am furious, cancel my hotel HTL-1002 right now, this is unacceptable!",cancel_hotel,cancel_generic,True,True,True,Hotel booking HTL-1002 cancelled.,0.0219
+13,hey can u check flight DEL-MAA-03,flight_booking,lookup_generic,True,False,True,"Found booking: {'id': 'DEL-MAA-03', 'from': 'DEL', 'to': 'MAA', 'date': '2026-09-20', 'status': 'confirmed'}.",0.019
+14,Looking to book a new hotel room in Delhi next week,hotel_booking,lookup_generic,False,False,False,No booking id found in message.,0.0018
+15,Need a rental car pickup at the airport tomorrow,car_rental,lookup_generic,False,False,False,No booking id found in message.,0.0013
+16,Cancel booking BLR-DEL-01,cancel_flight,cancel_generic,True,True,True,Flight BLR-DEL-01 cancelled.,0.0357
+17,Is there a fee for cancelling within 24 hours?,policy_query,cancel_generic,False,False,False,No booking id found in message.,0.0015
+18,Please check my car CAR-501 pickup date,car_rental,lookup_generic,True,False,True,"Found booking: {'id': 'CAR-501', 'city': 'DEL', 'pickup_date': '2026-09-10', 'status': 'confirmed'}.",0.0175
+19,"I'm disappointed, my hotel HTL-1001 reservation was wrong, please cancel it",cancel_hotel,cancel_generic,True,True,True,Hotel booking HTL-1001 cancelled.,0.0458
+20,Random question about the weather today,general_query,lookup_generic,False,False,False,No booking id found in message.,0.0014
+21,Can you help me understand something unrelated to bookings?,general_query,lookup_generic,False,False,False,No booking id found in message.,0.0012
+22,cancel car CAR-501 asap this is an emergency,cancel_car,cancel_generic,True,True,True,Car rental CAR-501 cancelled.,0.04
+23,Check status of flight BLR-BOM-02,flight_booking,lookup_generic,True,False,True,"Found booking: {'id': 'BLR-BOM-02', 'from': 'BLR', 'to': 'BOM', 'date': '2026-09-15', 'status': 'confirmed'}.",0.0343
+24,What happens to my refund after I cancel a flight?,policy_query,cancel_generic,False,False,False,No booking id found in message.,0.0016
+25,"terrible experience, want a refund for my stay HTL-1002",policy_query,lookup_generic,False,False,True,"Found booking: {'id': 'HTL-1002', 'city': 'BOM', 'checkin': '2026-09-15', 'nights': 2, 'status': 'confirmed'}.",0.0341

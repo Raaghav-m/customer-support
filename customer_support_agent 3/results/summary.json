@@ -1,0 +1,16 @@
+{
+  "n_test_cases": 25,
+  "proposed": {
+    "intent_accuracy": 1.0,
+    "task_completion_rate": 0.92,
+    "human_in_loop_rate": 0.28,
+    "escalation_rate": 0.16,
+    "avg_latency_sec": 0.0289
+  },
+  "baseline": {
+    "category_accuracy": 0.56,
+    "task_completion_rate": 0.6,
+    "unsafe_immediate_cancel_rate": 0.28,
+    "avg_latency_sec": 0.0187
+  }
+}
